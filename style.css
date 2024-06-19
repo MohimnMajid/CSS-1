@@ -573,6 +573,8 @@ footer:hover {
 
   .secondImg:hover {
     opacity: 0;
+    left: 0%;
+    top: 45%;
   }
 
   /* clouds + birds + sun */
