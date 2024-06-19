@@ -1,0 +1,675 @@
+/* General Styling ////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+body {
+  background-color: #a5eef7;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Fonts /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: "Comfortaa", sans-serif;
+  margin: 1%;
+  padding: 1%;
+}
+
+.fontDancingScript {
+  font-family: "Dancing Script", sans-serif;
+}
+
+/* nav section //////////////////////////////////////////////////////////////////////////////////////////////////*/
+.topNav {
+  font-size: 22px;
+  width: 30%;
+  position: relative;
+  left: 34.7%;
+  box-sizing: border-box;
+  border: 10px solid rgb(170, 234, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.navLinks {
+  transition: 0.2s;
+  text-align: center;
+  padding: 10px;
+  border-right: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks:hover {
+  background-color: #a271e9;
+}
+
+nav {
+  text-align: center;
+}
+
+.firsth2 {
+  animation: toph2 0.5s;
+}
+
+.magazine {
+  animation: magazine 0.5s;
+}
+
+.firsth2:hover {
+  color: red;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+li:nth-child(2) {
+  font-style: italic;
+}
+
+li:nth-child(1) {
+  font-weight: 800;
+}
+
+.authorName::first-letter {
+  font-size: 50px;
+}
+
+/* should be in this order! //////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+a {
+  color: blueviolet;
+  text-decoration: none;
+  cursor: grab;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:hover {
+  color: azure;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* Home Page <p> //////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.imgsbox {
+  margin-bottom: 15%;
+  position: relative;
+}
+
+.firstImg {
+  position: absolute;
+  color: red;
+  left: 36.6%;
+  top: 45%;
+  animation: toph2 1s;
+}
+
+.secondImg {
+  position: absolute;
+  left: 36.6%;
+  top: 45%;
+  opacity: 1;
+  transition: top 1s, left 1s, opacity 0.5s;
+  animation: magazine 1s;
+}
+
+.secondImg:hover {
+  opacity: 0;
+  top: 35%;
+  left: 31.6%;
+}
+
+.P1 {
+  width: 40%;
+  height: 20%;
+  position: relative;
+  left: 29%;
+  top: 90px;
+  border: 5px solid rgb(170, 234, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: rotate(1deg);
+  transition: transform 0.2s;
+}
+
+.P2 {
+  width: 40%;
+  height: 25%;
+  position: relative;
+  left: 29%;
+  top: 120px;
+  box-sizing: border-box;
+  border: 5px solid rgb(170, 234, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: rotate(-1deg);
+  transition: transform 0.2s;
+}
+
+.P3 {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  left: 29%;
+  top: 180px;
+  box-sizing: border-box;
+  border: 5px solid rgb(170, 234, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: rotate(1deg);
+  transition: transform 0.2s;
+}
+
+/* Clouds + sun + birds //////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cloud1 {
+  position: absolute;
+  width: 140px;
+  right: 85%;
+  top: 50%;
+  animation: cloudDance1 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.cloud2 {
+  position: absolute;
+  width: 140px;
+  left: 80%;
+  bottom: -30%;
+  animation: cloudDance2 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.cloud3 {
+  position: absolute;
+  width: 140px;
+  right: 85%;
+  bottom: -80%;
+  animation: cloudDance3 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.sun {
+  position: absolute;
+  width: 220px;
+  right: 77%;
+  top: 8%;
+  animation: sunFlip 2s;
+  animation-iteration-count: infinite;
+}
+
+.bird1 {
+  position: absolute;
+  width: 200px;
+  left: 80%;
+  bottom: 5%;
+}
+
+.bird2 {
+  position: absolute;
+  width: 200px;
+  right: 77%;
+  bottom: -25%;
+}
+
+.tree {
+  position: absolute;
+  width: 200px;
+  left: 80%;
+  bottom: -70%;
+}
+
+/* Clouds + P : HOVER ////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cloud1:hover {
+  animation: none;
+}
+.cloud2:hover {
+  animation: none;
+}
+
+.cloud3:hover {
+  animation: none;
+}
+
+.P1:hover {
+  background-color: #93e0f9;
+  border-color: #9adcf1;
+  transform: rotate(0deg);
+}
+
+.P2:hover {
+  background-color: #93e0f9;
+  border-color: #9adcf1;
+  transform: rotate(0deg);
+}
+
+.P3:hover {
+  background-color: #93e0f9;
+  border-color: #9adcf1;
+  transform: rotate(0deg);
+}
+
+/* KeyFrames of Clouds + sun anime + other anime /////////////////////////////////////////////////////////// */
+
+@keyframes magazine {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toph2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  70% {
+    opacity: 0.5;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cloudDance1 {
+  5% {
+    right: 85%;
+    top: 50%;
+  }
+
+  12.5% {
+    right: 84%;
+    top: 49%;
+  }
+  25% {
+    right: 83%;
+    top: 48%;
+  }
+  37.5% {
+    right: 82%;
+    top: 47%;
+  }
+  50% {
+    right: 81%;
+    top: 46%;
+  }
+  /* back */
+  62.5% {
+    right: 82%;
+    top: 47%;
+  }
+  75% {
+    right: 83%;
+    top: 48%;
+  }
+  87.5% {
+    right: 84%;
+    top: 49%;
+  }
+  90% {
+    right: 84.5%;
+    top: 49.5%;
+  }
+  100% {
+    right: 85%;
+    top: 50%;
+  }
+}
+/* 
+
+                                    ██████                      ██
+                                   ██     ██                                                  
+                                   ██     ██  ██████████      ██████      ████████    ██████████  
+                                   █████████  ██        ██      ██      ██  ██  ██    ██      ██
+                                   ██     ██  ██        ██      ██      ██  ██  ██    ██████████
+                                   ██     ██  ██        ██      ██      ██  ██  ██    ██        
+                                   ██     ██  ██        ██    ██████    ██  ██  ██      ██████  
+                                                    */
+@keyframes cloudDance2 {
+  5% {
+    left: 80%;
+    bottom: -30%;
+  }
+
+  12.5% {
+    left: 81%;
+    bottom: -29%;
+  }
+  25% {
+    left: 82%;
+    bottom: -28%;
+  }
+  37.5% {
+    left: 83%;
+    bottom: -27%;
+  }
+  50% {
+    left: 84%;
+    bottom: -26%;
+  }
+  /* back */
+  62.5% {
+    left: 83%;
+    bottom: -27%;
+  }
+  75% {
+    left: 82%;
+    bottom: -28%;
+  }
+  87.5% {
+    left: 81%;
+    bottom: -29%;
+  }
+  100% {
+    left: 80%;
+    bottom: -30%;
+  }
+}
+
+@keyframes cloudDance3 {
+  5% {
+    right: 85%;
+    bottom: -80%;
+  }
+
+  12.5% {
+    right: 86%;
+    bottom: -79%;
+  }
+
+  25% {
+    right: 87%;
+    bottom: -78%;
+  }
+
+  37.5% {
+    right: 88%;
+    bottom: -77%;
+  }
+
+  50% {
+    right: 89%;
+    bottom: -76%;
+  }
+
+  /* back */
+  62.5% {
+    right: 88%;
+    bottom: -77%;
+  }
+
+  75% {
+    right: 87%;
+    bottom: -78%;
+  }
+
+  87.5% {
+    right: 86%;
+    bottom: -79%;
+  }
+
+  100% {
+    right: 85%;
+    bottom: -80%;
+  }
+}
+
+@keyframes sunFlip {
+  12.5% {
+    width: 200px;
+  }
+  25% {
+    width: 190px;
+  }
+  37.5% {
+    width: 180px;
+  }
+  50% {
+    width: 170px;
+  }
+  /* back */
+  62.5% {
+    width: 180px;
+  }
+  75% {
+    width: 190px;
+  }
+  87.5% {
+    width: 200px;
+  }
+  90% {
+    width: 210px;
+  }
+  100% {
+    width: 220px;
+  }
+}
+
+/* Fotter ///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.footer {
+  font-size: 15px;
+  position: relative;
+  bottom: 0px;
+  margin: 1%;
+  margin-top: 20%;
+}
+
+footer:hover {
+  color: blue;
+}
+
+/* Media */
+
+@media screen and (max-width: 980px) {
+  /* NavBar */
+
+  .topNav {
+    margin-top: 100px;
+    font-size: 36px;
+    width: 100%;
+    position: relative;
+    left: -2%;
+    box-sizing: border-box;
+    border: 10px solid rgb(170, 234, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .navLinks {
+    transition: 0.2s;
+    text-align: center;
+    padding: 10px;
+    border-right: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /* imgs */
+  .firstImg {
+    display: none;
+  }
+
+  .secondImg {
+    position: relative;
+    left: 0%;
+    top: 45%;
+    opacity: 1;
+    transition: top 1s, left 1s, opacity 0.5s;
+    animation: magazine 1s;
+    width: 800px;
+    height: auto;
+  }
+
+  /* clouds + birds + sun */
+
+  .sun {
+    position: relative;
+    width: 410px;
+    left: 29%;
+    animation: none;
+    animation-iteration-count: infinite;
+    display: block;
+    content: url("img/sunGIF.gif");
+  }
+
+  .cloud1 {
+    display: none;
+  }
+
+  .cloud2 {
+    display: none;
+  }
+
+  .cloud3 {
+    display: none;
+  }
+
+  .bird1 {
+    display: none;
+  }
+
+  .bird2 {
+    display: none;
+  }
+
+  .tree {
+    display: none;
+  }
+
+  /* P */
+
+  p {
+    font-size: 40px;
+  }
+
+  .P1 {
+    width: 75%;
+    left: 12%;
+    height: 20%;
+    background-color: #a5eef7;
+    position: relative;
+    top: 0px;
+    border: 5px solid rgb(170, 234, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+  }
+
+  .P2 {
+    width: 75%;
+    left: 12%;
+    background-color: #a5eef7;
+    height: 25%;
+    position: relative;
+    top: 120px;
+    box-sizing: border-box;
+    border: 5px solid rgb(170, 234, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+  }
+
+  .P3 {
+    width: 75%;
+    left: 12%;
+    background-color: #a5eef7;
+    height: 40%;
+    position: relative;
+    top: 180px;
+    box-sizing: border-box;
+    border: 5px solid rgb(170, 234, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+  }
+
+  li {
+    font-size: 30px;
+  }
+
+  /* footer */
+
+  .footer {
+    font-size: 40px;
+    position: relative;
+    bottom: 0px;
+    margin: 1%;
+    margin-top: 30%;
+  }
+}
+
+/* Media Over */

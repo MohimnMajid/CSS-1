@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Basic Language of the Web: HTML</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+
+  <div class="container">
+    <header>
+      <h1 class="magazine">📘 The Code Magazine</h1>
+
+      <nav class="topNav">
+        <a class="navLinks Blog" href="blog.html">Blog</a>
+        <a class="navLinks" href="#">Challenges</a>
+        <a class="navLinks" href="#">Flexbox</a>
+        <a class="navLinks" href="#">CSS Grid</a>
+        <a class="navLinks Contats"
+          onclick="testButton()"
+          href="mailto:mohimn.majid@gmail.com?subject=Subject%20Here&body=Your%20message%20here""
+          target="_blank"
+          >Contats</a
+        >
+      </nav>
+    </header>
+
+    <img class="cloud1" src="img/cloud.png" alt="cloud" />
+    <img class="cloud2" src="img/cloud.png" alt="cloud" />
+    <img class="cloud3" src="img/cloud.png" alt="cloud" />
+    <img class="sun" src="img/sun.png" alt="sun" />
+    <img class="bird1" src="img/bird.png" alt="bird" />
+    <img class="bird2" src="img/bird2.webp" alt="bird" />
+    <img class="tree" src="img/tree.png" alt="tree" />
+
+    <header>
+      <h2 class="fontDancingScript firsth2">
+        The Basic Language of the Web: HTML
+      </h2>
+
+      <p class="LauraP fontDancingScript">
+        Posted by
+      </p>
+      <p class="fontDancingScript authorName">
+        <strong>Mohimn Majid</strong>
+      </p>
+      <p class="fontDancingScript">on Monday, June 21st 2027</p>
+
+      <div class="imgsbox">
+        <img
+        class="firstImg"
+        src="https://wpshopmart.com/wp-content/uploads/2016/10/Code-It-Logical-HD-Wallpaper-1.jpg"
+        alt="HTML code on a screen"
+        width="500"
+        height="200"
+      />
+       <img
+       class="secondImg"
+       src="img/post-img.jpg"
+       alt="HTML code on a screen"
+       width="500"
+       height="200"
+     />
+      </div>
+
+    </header>
+    <div class="P1">
+      <p>
+        All modern websites and web applications are built using three
+        <em>fundamental</em>
+        technologies: <strong>HTML, CSS</strong> and
+        <strong>JavaScript</strong>. These are the languages of the web.
+      </p>
+
+      <p>
+        In this post, let's focus on <strong>HTML</strong>. We will learn what
+        <strong>HTML</strong> is all about, and why you too should learn it.
+      </p>
+    </div>
+    <br />
+
+    <div class="P2">
+      <h3>What is HTML?</h3>
+      <p>
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+        language that web developers use to structure and describe the content
+        of a webpage (not a programming language).
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+      <p>In HTML, each element is made up of 3 parts:</p>
+
+      <ol>
+        <li class="firstli">The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+
+      <p>
+        You can learn more at
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          >MDN Web Docs</a
+        >
+      </p>
+    </div>
+
+    <div class="P3">
+      <h3>Why should you learn HTML?</h3>
+
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+
+      <ul class="mobileUl">
+        <li class="firstli">
+          To be able to use the fundamental web dev language
+        </li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+
+      <p>Hopefully you learned something new here. See you next time!</p>
+
+      <h4>Related posts</h4>
+
+      <ul class="related">
+        <li>
+          <img
+            src="img/related-1.jpg"
+            alt="Person programming"
+            width="75"
+            width="75"
+          />
+          <a href="#">How to Learn Web Development</a>
+          <p>By Jonas Schmedtmann</p>
+        </li>
+        <li>
+          <img src="img/related-2.jpg" alt="Lightning" width="75" heigth="75" />
+          <a href="#">The Unknown Powers of CSS</a>
+          <p>By Jim Dillon</p>
+        </li>
+        <li>
+          <img
+            src="img/related-3.jpg"
+            alt="JavaScript code on a screen"
+            width="75"
+            height="75"
+          />
+          <a href="#">Why JavaScript is Awesome</a>
+          <p>By Matilda</p>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+    </div>
+    <script>
+      let testButton = function () {
+        return Swal.fire({
+          title: "نجاح",
+          text: "لقد تمت العملية  بنجاح",
+          icon: "success",
+          confirmButtonText: "اكمل",
+        });
+      };
+    </script>
+    </div>
+  </body>
+</html>
